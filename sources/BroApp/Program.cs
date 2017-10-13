@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Nancy.Hosting.Self;
 
 namespace BroApp
 {
@@ -10,6 +7,13 @@ namespace BroApp
     {
         static void Main(string[] args)
         {
+            string url = "http://localhost:555/bro/";
+            using (var nancyHost = new NancyHost(new Uri(url)))
+            {
+                nancyHost.Start();
+                Console.WriteLine($"bro started at {url}.  Press enter to stop.");
+                Console.ReadLine();
+            }
         }
     }
 }
