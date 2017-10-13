@@ -7,7 +7,7 @@
     <ProjectGuid>{C8FFEED0-133F-4AF0-8696-02CE2B4EBE32}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>BroApp</RootNamespace>
-    <AssemblyName>BroApp</AssemblyName>
+    <AssemblyName>bro</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
